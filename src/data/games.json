@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Apple Game",
+        "url": "image/thumbnail/apple.jpg",
+        "desc": "Pick the last apple to win! A fun and strategic game for all ages.",
+        "link": "/apple-game"
+    },
+    {
+        "name": "Orange Game",
+        "url": "image/thumbnail/orange.jpg",
+        "desc": "Pick oranges strategically to win. Fun for everyone!",
+        "link": "/orange-game"
+    },
+    {
+        "name": "Endless Tik Tak Toe Game",
+        "url": "image/thumbnail/ttt.webp",
+        "desc": "Are you ready to master the endless possibilities of Tik Tak Toe?",
+        "link": "/endless-tik-tak-toe-game"
+    }
+]

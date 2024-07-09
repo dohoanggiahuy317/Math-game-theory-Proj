@@ -1,0 +1,48 @@
+.cool-tic-tac-toe {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.game-mode button {
+    margin-bottom: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.cell.X {
+    color: blue;
+}
+
+.cell.O {
+    color: red;
+}
+
+.cell.blur {
+    opacity: 0.5;
+}
+
+.info {
+    margin: 20px;
+}
+
+.reset-button {
+    padding: 10px 20px;
+    font-size: 1em;
+}

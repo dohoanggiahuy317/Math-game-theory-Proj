@@ -1312,6 +1312,25 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.57.0.tgz#a5417ae8427873f1dd08b70b3574b453e67b5f7f"
   integrity sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==
 
+"@fortawesome/fontawesome-common-types@6.5.2":
+  version "6.5.2"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-6.5.2.tgz#eaf2f5699f73cef198454ebc0c414e3688898179"
+  integrity sha512-gBxPg3aVO6J0kpfHNILc+NMhXnqHumFxOmjYCFfOiLZfwhnnfhtsdA2hfJlDnj+8PjAs6kKQPenOTKj3Rf7zHw==
+
+"@fortawesome/fontawesome-svg-core@^6.5.2":
+  version "6.5.2"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-6.5.2.tgz#4b42de71e196039b0d5ccf88559b8044e3296c21"
+  integrity sha512-5CdaCBGl8Rh9ohNdxeeTMxIj8oc3KNBgIeLMvJosBMdslK/UnEB8rzyDRrbKdL1kDweqBPo4GT9wvnakHWucZw==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "6.5.2"
+
+"@fortawesome/react-fontawesome@^0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@fortawesome/react-fontawesome/-/react-fontawesome-0.2.2.tgz#68b058f9132b46c8599875f6a636dad231af78d4"
+  integrity sha512-EnkrprPNqI6SXJl//m29hpaNzOp1bruISWaOiRtkMi/xSvHJlzc2j2JAYS7egxt/EbjSNV/k6Xy0AQI6vB2+1g==
+  dependencies:
+    prop-types "^15.8.1"
+
 "@humanwhocodes/config-array@^0.11.14":
   version "0.11.14"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.11.14.tgz#d78e481a039f7566ecc9660b4ea7fe6b1fec442b"
@@ -1685,6 +1704,11 @@
     loader-utils "^2.0.4"
     schema-utils "^4.2.0"
     source-map "^0.7.3"
+
+"@remix-run/router@1.17.1":
+  version "1.17.1"
+  resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.17.1.tgz#bf93997beb81863fde042ebd05013a2618471362"
+  integrity sha512-mCOMec4BKd6BRGBZeSnGiIgwsbLGp3yhVqAD8H+PxiRNEHgDpZb8J1TnrSDlg97t0ySKMQJTHCWBCmBpSmkF6Q==
 
 "@rollup/plugin-babel@^5.2.0":
   version "5.3.1"
@@ -7947,6 +7971,21 @@ react-refresh@^0.11.0:
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.11.0.tgz#77198b944733f0f1f1a90e791de4541f9f074046"
   integrity sha512-F27qZr8uUqwhWZboondsPx8tnC3Ct3SxZA3V5WyEvujRyyNv0VYPhoBg1gZ8/MV5tubQp76Trw8lTv9hzRBa+A==
+
+react-router-dom@^6.24.1:
+  version "6.24.1"
+  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-6.24.1.tgz#b1a22f7d6c5a1bfce30732bd370713f991ab4de4"
+  integrity sha512-U19KtXqooqw967Vw0Qcn5cOvrX5Ejo9ORmOtJMzYWtCT4/WOfFLIZGGsVLxcd9UkBO0mSTZtXqhZBsWlHr7+Sg==
+  dependencies:
+    "@remix-run/router" "1.17.1"
+    react-router "6.24.1"
+
+react-router@6.24.1:
+  version "6.24.1"
+  resolved "https://registry.yarnpkg.com/react-router/-/react-router-6.24.1.tgz#5a3bbba0000afba68d42915456ca4c806f37a7de"
+  integrity sha512-PTXFXGK2pyXpHzVo3rR9H7ip4lSPZZc0bHG5CARmj65fTT6qG7sTngmb6lcYu1gf3y/8KxORoy9yn59pGpCnpg==
+  dependencies:
+    "@remix-run/router" "1.17.1"
 
 react-scripts@5.0.1:
   version "5.0.1"
