@@ -144,7 +144,7 @@ header {
     width: auto;
     aspect-ratio: 1 / 1;
     height: auto;
-    background: url("../../../public/image/in_game/orange.webp");
+    background: url("../../../public/image/in_game/orange.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -152,7 +152,7 @@ header {
 }
 
 .orange.eaten {
-    background: url("../../../public/image/in_game/eaten\ orange.png");
+    background: url("../../../public/image/in_game/eaten\ orange.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

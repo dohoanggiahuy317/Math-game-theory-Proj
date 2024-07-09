@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# Math Lovers Game App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Motivation
 
-## Available Scripts
+The Math Lovers Game App is designed for young math enthusiasts who enjoy challenging and fun games that not only entertain but also stimulate their logical thinking and strategic planning skills. This app includes multiple games, each with unique rules and objectives, aimed at providing an engaging experience for players of all ages. Whether playing against another player or the computer, these games offer a delightful way to improve cognitive skills while having fun.
 
-In the project directory, you can run:
+## Games Included
 
-### `yarn start`
+1. **Apple Picking Game**
+2. **100 Oranges Game**
+3. **Cool Tic Tac Toe**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Instructions
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Apple Picking Game
 
-### `yarn test`
+Players take turns picking 1 or 2 consecutive apples. The player who picks the last apple wins the game. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Player vs Player Mode**: Two players alternate turns picking apples.
+- **Player vs Computer Mode**: The player competes against the computer.
 
-### `yarn build`
+**Special Rule**: The apple is not picked, it is eaten. Hence, it will not go away from the list but turn into gray color. If the player chooses 2 apples and tries to select an apple that has no adjacent apple, it is invalid, and they cannot select it.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 100 Oranges Game
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Two players eat 100 oranges by turn. Each turn, each player can choose any number of oranges between 1 to 100 and eat it. Whoever eats the last orange wins the game.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Player vs Player Mode**: Two players alternate turns eating oranges.
+- **Player vs Computer Mode**: The player competes against the computer.
 
-### `yarn eject`
+### Cool Tic Tac Toe
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This game is a twist on the classic Tic Tac Toe game. The number of maximum signs for each player on the board at any time is 3 signs. At each player's turn, before they make a new move, if the new signs will be more than 3, the oldest sign gets blurred, and when they make the move, the oldest sign disappears and no longer counts to determine the winning.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Player vs Player Mode**: Two players alternate turns placing their signs.
+- **Player vs Computer Mode**: The player competes against the computer.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Special Rule**: The computer uses smarter tactics to block the player's potential winning moves while also trying to create its own winning opportunities.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## How to Start
 
-## Learn More
+1. **Clone the Repository**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```git clone <repository-url>```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. **Navigate to the Project Directory**
 
-### Code Splitting
+```cd MathLoversGameApp```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. **Install Dependencies**
 
-### Analyzing the Bundle Size
+```yarn install```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+4. **Start the Application**
 
-### Making a Progressive Web App
+```yarn start```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+5. **Open the Application**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Open your browser and navigate to `http://localhost:3000` to start playing the games.
 
-### Deployment
+## Demo◊
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Apple Picking Game
 
-### `yarn build` fails to minify
+![Apple Picking Game](path/to/apple-picking-demo.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 100 Oranges Game
+
+![100 Oranges Game](path/to/100-oranges-demo.png)
+
+### Cool Tic Tac Toe
+
+![Cool Tic Tac Toe](path/to/cool-tic-tac-toe-demo.png)
+
+## Additional Features
+
+- **Music Player**: Background music keeps playing throughout the app, with the option to turn it on or off from the navbar.
+- **Responsive Design**: The app is designed to be responsive and works well on various devices.
+- **Smooth Transitions**: Enjoy smooth animations and transitions as you play the games.
+
+## Conclusion
+
+The Math Lovers Game App is a delightful collection of games that not only entertain but also help improve strategic thinking and problem-solving skills. It's perfect for young math lovers and anyone who enjoys a good challenge. Happy gaming!

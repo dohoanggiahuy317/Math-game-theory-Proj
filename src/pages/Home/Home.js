@@ -19,7 +19,8 @@ const GameCard = ({ name, url, desc, link }) => {
 const Home = () => {
     return (
         <div className="home">
-            <h1>Welcome to the Game Portal</h1>
+            <h1>Welcome to the Math Games world!</h1>
+            <p className="game-tagline">Sharpen your critical thinking and strategy skills while having loads of fun! 🧠✨</p>
             <div className="game-cards">
                 {games.map((game, index) => (
                     <GameCard

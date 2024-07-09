@@ -145,7 +145,7 @@ header {
     align-items: center;
     font-size: 24px;
     cursor: pointer;
-    background: url("../../../public/image/in_game/apple.webp");
+    background: url("../../../public/image/in_game/apple.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -153,7 +153,7 @@ header {
 }
 
 .apple.eaten {
-    background: url("../../../public/image/in_game/eaten\ apple.jpeg");
+    background: url("../../../public/image/in_game/eaten\ apple.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

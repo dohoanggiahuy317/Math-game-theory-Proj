@@ -1,37 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nunito:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #FF9FF3;
+    --secondary-color: #54DEFD;
+    --background-color: #FFEAA7;
+    --text-color: #2D3436;
+    --button-color: #55E6C1;
+    --button-hover: #41C7A7;
+}
+
+body {
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
 .cool-tic-tac-toe {
     text-align: center;
-    font-family: Arial, sans-serif;
+    font-family: 'Nunito', sans-serif;
+    color: var(--text-color);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+#ttt_game_mode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .game-mode button {
     margin-bottom: 20px;
+    background-color: var(--button-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.game-mode button:hover {
+    background-color: var(--button-hover);
+    transform: scale(1.05);
+}
+
+.instructions {
+    margin: 30px auto;
+    max-width: 600px;
+    text-align: left;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.instructions h2 {
+    color: var(--secondary-color);
+    margin-top: 0;
+}
+
+.instructions p {
+    line-height: 1.6;
+    margin-bottom: 15px;
 }
 
 .board {
     display: grid;
     grid-template-columns: repeat(3, 100px);
-    gap: 10px;
+    gap: 15px;
     justify-content: center;
-    margin: 20px auto;
+    margin: 30px auto;
 }
 
 .cell {
     width: 100px;
     height: 100px;
-    background-color: lightgray;
+    background-color: rgb(255, 252, 221);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2em;
+    font-size: 3em;
     cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+    transition: transform 0.2s;
+    font-family: 'Indie Flower', cursive;
+}
+
+.cell:hover {
+    transform: scale(1.05);
 }
 
 .cell.X {
-    color: blue;
+    color: var(--primary-color);
 }
 
 .cell.O {
-    color: red;
+    color: var(--secondary-color);
 }
 
 .cell.blur {
@@ -40,9 +113,33 @@
 
 .info {
     margin: 20px;
+    font-size: 1.2em;
 }
 
 .reset-button {
     padding: 10px 20px;
     font-size: 1em;
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.reset-button:hover {
+    background-color: var(--button-hover);
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .board {
+        grid-template-columns: repeat(3, 80px);
+        gap: 10px;
+    }
+
+    .cell {
+        width: 80px;
+        height: 80px;
+        font-size: 2.5em;
+    }
 }
