@@ -60,11 +60,12 @@ const GameBoard = () => {
             if (computerPickCount === -1) {
                 const maxPick = Math.min(10, oranges.filter(orange => !orange).length);
                 computerPickCount = Math.floor(Math.random() * maxPick) + 1;
+                // computerPickCount = 10;
             }
 
             handleOrangePick(computerPickCount);
             setComputerAnnouncement(`Computer picks ${computerPickCount} orange(s).`);
-        }, 1000);
+        }, 500);
     };
 
 
@@ -124,11 +125,11 @@ const GameBoard = () => {
                     <div>
                         <h1>
                             {winner
-                                ? !isComputer
-                                    ? `Player ${winner} Wins!`
-                                    : `Computer Wins!`
+                                ? isComputer && currentPlayer === 1
+                                    ? `Computer Wins!`
+                                    : `Player ${winner} Wins!`
                                 : isComputer && currentPlayer === 2
-                                    ? "Computer's Turn"
+                                    ? `Computer's Turn`
                                     : `Player ${currentPlayer}'s Turn`}
                         </h1>
                         <p>{computerAnnouncement}</p>
