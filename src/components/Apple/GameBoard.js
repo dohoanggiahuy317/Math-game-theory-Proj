@@ -143,9 +143,9 @@ const GameBoard = () => {
             <div className="info">
                 <h1>
                     {winner
-                        ? !isComputer 
-                            ? `Player ${winner} Wins!` 
-                            : `Computer Wins!`
+                        ? !isComputer && currentPlayer === 1
+                            ? `Computer Wins!`
+                            : `Player ${winner} Wins!`
                         : isComputer && currentPlayer === 2
                             ? "Computer's Turn"
                             : `Player ${currentPlayer}'s Turn`}
