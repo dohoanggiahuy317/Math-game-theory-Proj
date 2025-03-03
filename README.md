@@ -4,6 +4,8 @@
 
 The Math Lovers Game App is designed for young math enthusiasts who enjoy challenging and fun games that not only entertain but also stimulate their logical thinking and strategic planning skills. This app includes multiple games, each with unique rules and objectives, aimed at providing an engaging experience for players of all ages. Whether playing against another player or the computer, these games offer a delightful way to improve cognitive skills while having fun.
 
+link to game: [https://math-game-theory-fun.vercel.app/](https://math-game-theory-fun.vercel.app/)
+
 ## Games Included
 
 1. **Apple Picking Game**
@@ -60,7 +62,7 @@ This game is a twist on the classic Tic Tac Toe game. The number of maximum sign
 
 Open your browser and navigate to `http://localhost:3000` to start playing the games.
 
-## Demo◊
+## Demo
 
 ### Apple Picking Game
 
